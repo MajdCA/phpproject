@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <h3>paramétrer un formulaire pour l'utiliser en php </h3>
+        1. bouton submit, car en cliquant sur ce bouton les données sont envoyées (l'envoie se fait a travers ce bouton)
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+        2. un paramètre action dans la balise <form> qui contient la page qui va recevoir les données saisies par l'utilisateur
+            <form action='traitement.php'>
+       
+        3. un 3eme paramètre qui définit comment se fait l'envoie:
+         méthode get ou post
+         <form action='traitement.php' method="post"></form>
+
+        4. Qu'est ce que l'utilisateur va envoyer
+        c'est le contenu des champs <input>
+        => il faut donner la propriété name pour chaque input
+        (id (css ou js) en front mais php utilise name)
+
+        résumé: pour que les données du formulaire seront envoyées il faut vérifier que tous ces 
+        paramètres sont bien définis 
+
+        NB. lors de la réception il faut utiliser la m^me méthode 
+        d'envoie utilisée lors de l'envoie
+
+        les données seront donc récupérées dans l'une de ces
+        variables superglobales ($_post ou _$_get)
+        ces variables existent toujours dans php qui et seront remplies lors de l'envoie des
+        données et on peut aussi les vider
+    
+        glt on utilise la méthode post mais il y'a des situations ou on utilise get
+                
+    </body>
+</html>
